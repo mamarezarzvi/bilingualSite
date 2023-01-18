@@ -1,0 +1,7 @@
+.dropdown--arrow__open {
+  border-color: transparent transparent white !important;
+}
+
+.dropdown--arrow__close {
+  border-color: white transparent transparent !important;
+}
