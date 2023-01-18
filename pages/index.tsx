@@ -12,9 +12,11 @@ export type PageProps = {
 
 export default function Home(props: PageProps) {
   const { language } = useLanguage();
+
   const navigationItems =
     language === Languages.english ? props.navItems.en : props.navItems.fa;
   const isLTR = language === Languages.english;
+
   return (
     <>
       <Head>
@@ -25,7 +27,9 @@ export default function Home(props: PageProps) {
       </Head>
       <NavigationBar navigationItems={navigationItems} language={language} />
       <main
-        className={`px-10 py-6 font-bold ${isLTR ? styles.ltr : styles.rtl}`}
+        className={`px-10 py-6 font-bold h-screen ${
+          isLTR ? styles.ltr : styles.rtl
+        }`}
       >
         <h1>{navigationItems.home}</h1>
       </main>

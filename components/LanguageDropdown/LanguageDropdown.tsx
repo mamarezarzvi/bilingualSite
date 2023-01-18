@@ -23,8 +23,8 @@ export function LanguageDropDown() {
 
   return (
     <Dropdown
-      className="bg-transparent mx-4"
-      controlClassName="bg-transparent h-8 border-none flex items-center"
+      className="!bg-transparent mx-4"
+      controlClassName="!bg-transparent h-8 !border-none flex items-center"
       menuClassName="text-center"
       placeholderClassName="text-sm text-white"
       arrowClassName={
